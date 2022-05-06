@@ -1,16 +1,17 @@
 
 
-const InputSearch = ({ endIcon }) => {
+const InputSearch = ({ name, placeholder, endIcon, value, onChange }) => {
     
     return (
         <div className="input-wrapper">
             <input
-                className="input-search"
                 type="text"
-                name="query"
-                placeholder="Search"
+                name={name}
+                placeholder={placeholder}
+                value={value}
+                onChange={onChange}
             />
-            <div className="search-icon">
+            <div className="input-icon">
                 {endIcon}
             </div>
         </div>

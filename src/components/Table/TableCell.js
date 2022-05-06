@@ -1,10 +1,10 @@
 
 
-const TableCell = ({ children, style, colSpan }) => {
+const TableCell = ({ children, style, colSpan, handleClick }) => {
 
     return (
         <td style={style} colSpan={colSpan}>
-            <div>{children}</div>
+            <div onClick={handleClick}>{children}</div>
         </td>
     )
 }

@@ -136,7 +136,7 @@ const Home = () => {
                 </TableBody>
                 <TableFoot colSpan={3}>
                     {
-                        total > limit
+                        total > Number(limit)
                         &&
                         <Pagination
                             page={Number(page)}
